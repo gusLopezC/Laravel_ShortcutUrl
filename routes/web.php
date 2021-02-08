@@ -23,6 +23,11 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('{code}', 'App\Http\Controllers\UrlController@show');
+// Route::get('{code}', 'App\Http\Controllers\UrlController@show');
  
 Route::post('url', 'App\Http\Controllers\UrlController@store');
+
+//Route::get('test', function () {
+
+    //dd(microtime());
+//});
